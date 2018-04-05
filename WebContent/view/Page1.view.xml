@@ -1,9 +1,26 @@
-<mvc:View xmlns:mvc="sap.ui.core.mvc"  xmlns="sap.m">
+<mvc:View xmlns:mvc="sap.ui.core.mvc"  xmlns="sap.m" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core">
   
 	  <Page  title="Employee Registration Form" >
 		  <content>
-			      <Button text="Save" enabled="true"/>
-			      <Label  text="Employee Name"/>
+			     <form:SimpleForm>
+			              <form:title>
+			                     <core:Title text="Please Enter Employee Details"/>
+			              </form:title>
+			              
+			              <form:content>
+			                       <Label text="Employee Name"/>
+			                       <Input />
+			                       <Label text="Department"/>
+			                       <ComboBox>
+			                           <items>
+			                               <core:Item text="SAP"/>
+			                               <core:Item text="ORACLE"/>
+			                           </items>
+			                            
+			                       </ComboBox>
+			              </form:content>
+			              
+			     </form:SimpleForm>
 		    </content>  
 	  </Page>
 	  
