@@ -1,4 +1,8 @@
-<mvc:View xmlns:mvc="sap.ui.core.mvc"  xmlns="sap.m" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core">
+<mvc:View xmlns:mvc="sap.ui.core.mvc"  xmlns="sap.m" 
+                                                            xmlns:form="sap.ui.layout.form" 
+                                                            xmlns:core="sap.ui.core"
+                                                            controllerName="view.Page1"
+                                                            >
   
 	  <Page  title="Employee Registration Form" >
 		  <content>
@@ -9,8 +13,8 @@
 			              
 			              <form:content>
 			                       <Label text="Employee Name"/>
-			                       <Input />
-			                       <Label text="Department"/>
+			                       <Input id="idIp"/>
+			                       <Label text="Department" id="idLabel"/>
 			                       <ComboBox>
 			                           <items>
 			                               <core:Item text="SAP"/>
@@ -22,6 +26,13 @@
 			              
 			     </form:SimpleForm>
 		    </content>  
+		    <footer>
+		        <Bar>
+		            <contentLeft>
+		                 <Button text="Create"/>
+		            </contentLeft>
+		        </Bar>
+		    </footer>
 	  </Page>
 	  
 </mvc:View>
